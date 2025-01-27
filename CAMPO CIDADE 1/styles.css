@@ -1,0 +1,227 @@
+/* Reset básico */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Cor de fundo padrão */
+    color: #333; /* Texto padrão escuro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #28a745;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar-brand {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #1e7e34;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.hero .btn {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background: #28a745;
+}
+
+/* Seção de Serviços */
+#servicos {
+    background-color: #343a40;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#servicos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.card:hover, .card:active {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #28a745;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: white;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: white;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #f8f9fa;
+}
+
+/* Formulário de Cadastro */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input:focus, form button:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #1e7e34;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        display: none;
+        background: #28a745;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    header .hamburger {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+
+header {
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Garante que o cabeçalho cubra toda a largura */
+    z-index: 1000; /* Coloca o cabeçalho acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destaque */
+}
+
+body {
+    padding-top: 60px; /* Adiciona um espaçamento para evitar sobreposição do cabeçalho no conteúdo */
+}

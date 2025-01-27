@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Termos de Uso</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #000;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-success text-white py-3 fixed-top shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand fw-bold" href="index.html">CAMPO CIDADE</a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" id="loginLink" href="templates/login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#cadastroForm">Cadastro</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="image-section" class="mt-5 pt-5">
+        <div class="container text-center">
+            <h1 class="mb-4">Política de Privacidade e Termos de Uso</h1>
+            <img src="img/campo cidade 1.jpg" alt="Design de estande agrícola Campo Cidade" class="img-fluid rounded shadow">
+        </div>
+    </section>
+
+    <main>
+        <section id="politica-de-privacidade">
+            <h2>Política de Privacidade</h2>
+            <p>
+                Sua privacidade é importante para nós. Esta Política de Privacidade descreve como coletamos, 
+                usamos, armazenamos e protegemos suas informações pessoais.
+            </p>
+            <h3>Coleta de Dados</h3>
+            <p>
+                Nós podemos coletar informações pessoais, como nome, e-mail, telefone, entre outros, 
+                quando você interage com nosso site ou utiliza nossos serviços.
+            </p>
+            <h3>Uso das Informações</h3>
+            <p>
+                As informações coletadas são utilizadas para melhorar nossos serviços, oferecer suporte e 
+                comunicar novidades relacionadas à nossa plataforma.
+            </p>
+            <h3>Proteção de Dados</h3>
+            <p>
+                Implementamos medidas de segurança para proteger suas informações contra acesso não autorizado, 
+                alteração, divulgação ou destruição.
+            </p>
+        </section>
+
+        <section id="termos-de-uso">
+            <h2>Termos de Uso</h2>
+            <p>
+                Estes Termos de Uso regulam a utilização de nosso site e serviços. Ao acessar ou utilizar 
+                nossa plataforma, você concorda com os termos descritos abaixo.
+            </p>
+            <h3>Uso Aceitável</h3>
+            <p>
+                Você concorda em usar nossa plataforma de forma legal e ética, sem violar os direitos de terceiros 
+                ou comprometer a segurança do site.
+            </p>
+            <h3>Propriedade Intelectual</h3>
+            <p>
+                Todo o conteúdo disponível em nosso site, incluindo textos, imagens, gráficos e logotipos, é 
+                protegido por direitos autorais e não pode ser usado sem nossa permissão.
+            </p>
+            <h3>Alterações nos Termos</h3>
+            <p>
+                Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento. As alterações serão 
+                publicadas nesta página.
+            </p>
+        </section>
+
+        <p>
+            Caso tenha dúvidas sobre nossa Política de Privacidade ou Termos de Uso, entre em contato conosco 
+            pelo <a href="https://wa.me/5561986221356">WhatsApp</a> ou por <a href="https://www.email.com/in/nosso-email">e-mail</a>.
+        </p>
+    </main>
+
+
+    <script>
+        // Função para redirecionar ao clicar em "Login"
+        document.getElementById("loginLink").addEventListener("click", function (event) {
+        event.preventDefault(); // Evita o comportamento padrão do link
+        window.location.href = "login.html"; // Redireciona para login.html
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animame_index.js"></script>
+
+
+</body>
+</html>

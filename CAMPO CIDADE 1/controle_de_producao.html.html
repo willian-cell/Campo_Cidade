@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horta Hidropônica</title>
+    <!-- Importa o arquivo CSS -->
+    <link rel="stylesheet" href="controle_de_producao.css">
+    <!-- Biblioteca Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<!-- Cabeçalho -->
+<header class="bg-success text-white py-3 fixed-top shadow">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand fw-bold" href="index.html">CAMPO CIDADE</a>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<body>
+    <div id="app" style="margin-top: 110px;">
+        <div class="login-page" id="loginPage">
+
+            <div class="card">
+                <h2>Login</h2>
+                <form onsubmit="login(event)">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="dashboard container" id="dashboard" style="display: none;">
+    <h1 class="dashboard-title">Controle de Produção</h1>
+    <div class="grid">
+        <!-- Card Horta 1 -->
+        <div class="card dashboard-card">
+            <h3 class="card-title">Horta 1</h3>
+            <p class="status">
+                <span class="status-label">Status:</span> 
+                <strong class="status-value producing">Produzindo</strong>
+            </p>
+            <p class="plantation">Plantação: <strong>Alface</strong></p>
+            <button class="btn-manage" onclick="toggleDetails(this, '2025-01-10')">Gerenciar</button>
+            <div class="details">
+                <p>Data do Plantio: 10/01/2025</p>
+                <p>Colheita em: <span class="harvest-timer"></span></p>
+                <button class="btn-detailed" onclick="redirectToDetails('Alface')">Visualização Detalhada</button>
+            </div>
+        </div>
+
+        <!-- Card Horta 2 -->
+        <div class="card dashboard-card">
+            <h3 class="card-title">Horta 2</h3>
+            <p class="status">
+                <span class="status-label">Status:</span> 
+                <strong class="status-value replanting">Replantio</strong>
+            </p>
+            <p class="plantation">Plantação: <strong>Tomate</strong></p>
+            <button class="btn-manage" onclick="toggleDetails(this, '2025-01-05')">Gerenciar</button>
+            <div class="details">
+                <p>Data do Plantio: 05/01/2025</p>
+                <p>Colheita em: <span class="harvest-timer"></span></p>
+                <button class="btn-detailed" onclick="redirectToDetails('Tomate')">Visualização Detalhada</button>
+            </div>
+        </div>
+        </div>
+        <button class="btn-logout" onclick="logout()">Sair</button>
+    </div>
+
+    <div id="detailsPage" class="visualizacao-detalhada" style="display: none;">
+        <h1 class="details-title">Visualização Detalhada</h1>
+        <button class="btn-back" onclick="goBack()">Voltar</button>
+        <div class="details-container">
+            <!-- Informações -->
+            <h2>Informações das Sementes</h2>
+            <p><strong>Nome da Marca:</strong> [Nome da Marca]</p>
+            <p><strong>Tipo de Semente:</strong> [Tipo]</p>
+            <!-- Outros detalhes -->
+        </div>
+
+        <div class="charts-container">
+            <canvas id="growthChart"></canvas>
+            <canvas id="phChart"></canvas>
+            <canvas id="ecChart"></canvas>
+            <canvas id="productionChart"></canvas>
+            <canvas id="environmentChart"></canvas>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="js/controle_de_producao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<script>
+    // Função para redirecionar ao clicar em "Login"
+    document.getElementById("loginLink").addEventListener("click", function (event) {
+    event.preventDefault(); // Evita o comportamento padrão do link
+    window.location.href = "login.html"; // Redireciona para login.html
+    });
+</script>
+
+</html>

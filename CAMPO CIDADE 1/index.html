@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo Cidade</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-success text-white py-3 fixed-top shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand fw-bold" href="index.html">CAMPO CIDADE</a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" id="loginLink" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#cadastroForm">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ 
+<!-- Seção Inicial -->
+<section id="home" class="bg-light text-center py-5" style="background-image: url('img/im1.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <h1 class="fw-bold" style="color: #ffffff;">O seu cantinho do campo!</h1>
+        <p class="lead" style="color: #ffffff;">Produza, e nós te ajudamos a exibir seus produtos e vendê-los.</p>
+        
+        <!-- Carrossel de vídeos -->
+        <div id="video-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true">
+            <div class="carousel-inner" style="border-radius: 50px; overflow: hidden;">
+                <div class="carousel-item active">
+                    <video autoplay loop muted playsinline style="width: 50%; border-radius: 50px;">
+                        <source src="img/WhatsApp Video 2025-01-24 at 16.58.54.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay loop muted playsinline style="width: 50%; border-radius: 50px;">
+                        <source src="img/WhatsApp Video 2025-01-24 at 16.58.54.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay loop muted playsinline style="width: 50%; border-radius: 50px;">
+                        <source src="img/WhatsApp Video 2025-01-24 at 16.58.54.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+            </div>
+            
+            <!-- Controles do carrossel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#video-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#video-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Seção Sobre nós -->
+    <section id="sobre" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Sobre Nós</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/img3.jpg" class="card-img-top" alt="Painel de Monitoramento">
+                        <div class="card-body">
+                            <h5 class="card-title">Startup</h5>
+                            <p class="card-text">Somos desenvolvedores de sistemas e apps que ajudam a administrar todo tipo de mercado, e estamos nesse ano de 2025 investindo em pequenos produtores a fim de ganhar dinheiro com um passa tempo que muitos gostam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/img2.jpg" class="card-img-top" alt="Plataforma Comunitária">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipe</h5>
+                            <p class="card-text">Nossa equipe é formada por alunos da EFG de Santo Antônio do Descoberto GO.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/img4.jpg" class="card-img-top" alt="Insights Baseados em Dados">
+                        <div class="card-body">
+                            <h5 class="card-title">Colaboradores</h5>
+                            <p class="card-text">Diariamente temos recebido de pessoas,  colaboradores do projeto, intereçadas em nosso projeto muitas fotos de plantaçoes ja em funcionamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Nossos Serviços</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/dashboarder.webp" class="card-img-top" alt="Painel de Monitoramento">
+                        <div class="card-body">
+                            <h5 class="card-title">Painel de Monitoramento</h5>
+                            <p class="card-text">Mantenha-se atualizado sobre suas plantas com nosso painel intuitivo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/plantio.jpeg" class="card-img-top" alt="Plataforma Comunitária">
+                        <div class="card-body">
+                            <h5 class="card-title">Plataforma Comunitária</h5>
+                            <p class="card-text">Conecte-se com outros entusiastas e compartilhe experiências.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/trabalhando.jpg" class="card-img-top" alt="Insights Baseados em Dados">
+                        <div class="card-body">
+                            <h5 class="card-title">Insights Baseados em Dados</h5>
+                            <p class="card-text">Use dados para otimizar suas estratégias de plantio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Formulário -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-4">Cadastro</h2>
+                    <form id="cadastroForm" style="max-width: 500px;" onsubmit="return enviarDados()">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div>
+                            <label for="cpf">CPF:</label>
+                            <input type="cpf" id="cpf" name="cpf" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="numero_telefone">Número de Contato:</label>
+                            <input type="numero_telefone" id="numero_telefone" name="numero_telefone" required>
+                        </div>
+                        <div>
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="senha" required>
+                        </div>
+                        <div>
+                            <label for="confirmaSenha">Confirme a Senha:</label>
+                            <input type="password" id="confirmaSenha" name="confirmaSenha" required>
+                        </div>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+
+
+                    <script>
+                        function enviarDados() {
+                            const formData = new FormData(document.getElementById('cadastroForm'));
+                
+                            if (formData.get('senha') !== formData.get('confirmaSenha')) {
+                                alert("As senhas não coincidem!");
+                                return false;
+                            }
+                
+                            fetch('http://localhost:8000', {
+                                method: 'POST',
+                                body: new URLSearchParams(formData),
+                            })
+                            .then(response => response.text())
+                            .then(data => {
+                                alert(data);
+                                alert('Cadastramento concluido!')
+                                document.getElementById('cadastroForm').reset();
+                            })
+                            .catch(error => console.error('Erro:', error));
+                
+                            return false; // Impede o recarregamento da página
+                        }
+                    </script>
+
+    <!--roda pe-->    
+    <footer style="background-color: #333; padding: 20px 0; color: #fff; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 20px;">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://wa.me/5561986221356" target="_blank" 
+                       style="text-decoration: none; color: #fff;">Contato Watzap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.email.com/in/seu-perfil" target="_blank" 
+                       style="text-decoration: none; color: #fff;">Contato Email</a>
+                </li>
+               
+            </ul>
+            <p style="margin-top: 20px; font-size: 14px; color: #aaa;">
+                &copy; 2025 - Startup Campo Cidade. Todos os direitos reservados.
+            </p>
+            <p style="font-size: 12px; margin-top: 10px;">
+                <a href="politica-de-privacidade.html" style="color: #aaa; text-decoration: none;">Política de Privacidade</a> | 
+                <a href="https://www.behance.net/gallery/109324537/Aeroponia?tracking_source=search_projects|aeroponia&l=3 style="color: #aaa; text-decoration: none;">Termos de Uso</a>
+            </p>
+        </div>
+    </footer>
+    
+
+    <script>
+        document.getElementById("cadastroForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = {
+                nome: formData.get("nome"),
+                email: formData.get("email"),
+                senha: formData.get("senha")
+            };
+            const response = await fetch("http://127.0.0.1:5000/usuarios", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json();
+            alert(result.message || result.error);
+        });
+    </script>
+
+
+    <script>
+        // Função para redirecionar ao clicar em "Login"
+        document.getElementById("loginLink").addEventListener("click", function (event) {
+        event.preventDefault(); // Evita o comportamento padrão do link
+        window.location.href = "login.html"; // Redireciona para login.html
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animame_index.js"></script>
+    
+
+</body>
+</html>
